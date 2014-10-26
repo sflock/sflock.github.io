@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <title>Blackboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Slambooke, Inc">
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Pace -->
+	<link href="css/pace.css" rel="stylesheet">	
+
+	<link href="css/animate.css" rel="stylesheet">
+	
+	<!-- Endless -->
+	<link href="css/endless.min.css" rel="stylesheet">
+	<link href="css/endless-skin.css" rel="stylesheet">
+
+	<link href="octicons/octicons.css" rel="stylesheet">
+	
+  </head>
+
+  <body class="overflow-hidden">
+	<!-- Overlay Div -->
+	<div id="overlay" class="transparent"></div>
+
+	<div id="wrapper" class="preload">
+		<div id="top-nav" class="skin-3 fixed">
+			<div class="brand">
+			&nbsp;&nbsp;<img src="img/slambookelogo.png" width="105px" height="20px">
+			</div><!-- /brand -->
+			<button type="button" class="navbar-toggle pull-left" id="sidebarToggle">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div><!-- /top-nav-->
+		
+		<aside class="fixed skin-6">	
+			<div class="sidebar-inner scrollable-sidebar">
+				<div class="size-toggle">
+					<a class="btn btn-sm" id="sizeToggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+				</div><!-- /size-toggle -->
+				<div class="main-menu">
+					<ul>
+						<li>
+							<a href="blackboard.html">
+								<span class="menu-icon">
+									<i class="octicon octicon-home"></i> 
+								</span>
+								<span class="text">
+									Home
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a target="_black" href="http://blog.slambooke.com">
+								<span class="menu-icon">
+									<i class="octicon octicon-diff"></i> 
+								</span>
+								<span class="text">
+									Blog
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="events.html">
+								<span class="menu-icon">
+									<i class="octicon octicon-calendar"></i> 
+								</span>
+								<span class="text">
+									Events
+								</span>
+								<span class="badge badge-default bounceIn animation-delay6">0</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="dev/applications.html">
+								<span class="menu-icon">
+									<i class="octicon octicon-package"></i> 
+								</span>
+								<span class="text">
+									Applications
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+
+						<br>
+						<br>
+						<br>
+
+						<li>
+							<a href="developer.html">
+								<span class="menu-icon">
+									<i class="octicon octicon-terminal"></i> 
+								</span>
+								<span class="text">
+									Developer
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="support.html">
+								<span class="menu-icon">
+									<i class="octicon octicon-question"></i> 
+								</span>
+								<span class="text">
+									Help
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="terms.html">
+								<span class="menu-icon">
+									<i class="octicon octicon-file-text"></i> 
+								</span>
+								<span class="text">
+									Terms
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+						<li>
+							<a href="status.html">
+								<span class="menu-icon">
+									<i class="octicon octicon-radio-tower"></i> 
+								</span>
+								<span class="text">
+									Status
+								</span>
+								<span class="menu-hover"></span>
+								<span class="badge badge-success bounceIn animation-delay8">Online</span>
+							</a>
+						</li>
+						<li>
+							<a href="company.html">
+								<span class="menu-icon">
+									<i class="octicon octicon-info"></i> 
+								</span>
+								<span class="text">
+									About
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+					</ul>
+
+				</div><!-- /main-menu -->
+			</div><!-- /sidebar-inner -->
+		</aside>
+
+
+
+		<div id="main-container">
+			<div class="padding-md">
+				<div class="row">
+					<div class="col-md-3">
+						<img src="img/world.png" height="140" class="animated bounceIn"></img>
+
+						<br>
+						<br>
+
+						<div class="list-group">
+						  	<p href="#" class="list-group-item disabled"><strong>Category</strong></p>
+							<a href="school/public_universities.html" class="list-group-item"> Public Universities <span class="badge badge-success bounceIn animation-delay5">9</span></a>
+							<a href="school/private_universities.html" class="list-group-item"> Private Universities <span class="badge badge-success bounceIn animation-delay5">16</span></a>
+							<a href="school/polytechnics.html" class="list-group-item"> Polytechnic <span class="badge badge-success bounceIn animation-delay5">5</span></a>
+							<a href="school/senior_high_schools.html" class="list-group-item"> Senior High Schools <span class="badge badge-success bounceIn animation-delay5">4</span></a>
+							<a href="school/primary_schools.html" class="list-group-item"> Primary Schools <span class="badge badge-default bounceIn animation-delay5">0</span></a>
+						</div>
+
+						<br>
+
+						<h4 class="headline m-top-md"> 
+							<strong>Tweets</strong>
+							<span class="line"></span>
+						</h4>
+
+						<a class="twitter-timeline"  href="https://twitter.com/slambookeapp"  data-widget-id="468363732871954432"></a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+						<br>
+
+						<h4 class="headline m-top-md"> 
+							<strong>Ads</strong>
+							<span class="line"></span>
+						</h4>
+						<img src="img/slambooke_ad_space.png" class="img-thumbnail">
+					</div>
+
+
+					<div class="col-md-7">
+						<h4 class="headline m-top-md">
+							<span class="octicon octicon-flame"></span> 
+							<strong> (34) Trending schools in Ghana you might be interested in.</strong>
+							<span class="line"></span>
+						</h4>
+					</div>
+
+					<div class="col-md-4 animated bounceInRight animation-delay6">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/legon.jpg" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">University Of Ghana Legon </strong>
+									<small class="text-muted">Accra</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/university_of_ghana_legon.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+								
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/knust.jpg" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">Kwame Nkrumah University</strong>
+									<small class="text-muted">Kumasi</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/knust.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/ucc.png" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">University of Cape Coast</strong>
+									<small class="text-muted">Cape Coast</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/university_of_cape_coast.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/uds.jpg" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">University for Dev. Studies</strong>
+									<small class="text-muted">Tamale</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/uds.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/winneba.png" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">University Of Education Winneba</strong>
+									<small class="text-muted">Central Region</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/university_of_education_winneba.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/umat.png" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">University Of Mines & Technology</strong>
+									<small class="text-muted">Tarkwa</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/university_of_mines_and_technology.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/zuc.jpg" class="img-circle" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">Zenith University College</strong>
+									<small class="text-muted">Kpeshie</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/zenith_university_college.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/ashesi_logo1.png" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">Ashesi University College</strong>
+									<small class="text-muted">Berekeso</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/ashesi_university.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/regent.jpg" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">Regent University College</strong>
+									<small class="text-muted">Mateheko</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/regent_university_college.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/upsa.png" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">University of Professional Studies</strong>
+									<small class="text-muted">Accra</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/university_of_professional_studies.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/wiuc.png" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">Wisconsin Int. University College</strong>
+									<small class="text-muted">Accra</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/wisconsin_university.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/pentecost.png" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">Pentecost University College</strong>
+									<small class="text-muted">Accra - Sowutuom</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/pentecost_university_college.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/anu.jpg" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">All Nations University College</strong>
+									<small class="text-muted">Koforidua</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/all_nations_university_college.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/accra_institute_of_technology_logo.jpg" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">Accra Institute of Technology</strong>
+									<small class="text-muted">Accra</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/accra_institute_of_technology.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+
+
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a class="pull-left avatar"> 
+									<img src="school/img/uenr.png" class="img-" alt="school logo"> 
+								</a>
+								<div class="pull-left m-left-sm">
+									<strong class="font-14 block">Uni. of Energy & Natural Resources</strong>
+									<small class="text-muted">Sunyani</small>
+									<div class="seperator"></div>
+									<a class="btn btn-xs btn-success" href="school/university/university_of_energy_and_natural_resources.html">Overview</a>
+									<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+								</div>
+							</div>
+						</div><!-- /panel -->
+					</div>
+
+
+
+
+
+
+					<!-- /Second School -->
+					<div class="col-md-4 animated bounceInRight animation-delay8">
+						<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/central.png" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Central University College</strong>
+										<small class="text-muted">Accra - Miotso Prampram</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/central_university_college.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/valleyview.jpg" class="img-circle" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Valley View University</strong>
+										<small class="text-muted">Accra</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/valley_view_university_college.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/greenhill.png" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Greenhill University</strong>
+										<small class="text-muted">Accra</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/ghana_institute_of_management_and_public_administration.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/methodist.jpg" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Methodist University College</strong>
+										<small class="text-muted">Accra</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/methodist_university_college.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/ghanatelecom.jpg" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Ghana Telecom University College</strong>
+										<small class="text-muted">Abeka</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/ghana_telecom_university_college.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/puc.jpg" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Presbyterian University College</strong>
+										<small class="text-muted">Abetifi</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/presbyterian_university_college.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/catholic_university.png" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Catholic University</strong>
+										<small class="text-muted">Sunyani</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/catholic_university.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/iucg.jpg" class="img-circle" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Islamic University College</strong>
+										<small class="text-muted">East Legon</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/islamic_university_college.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/gbuc.jpg" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Ghana Baptist University College</strong>
+										<small class="text-muted">Accra</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/ghana_baptist_university_college.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/rmu.jpg" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Regional Maritime University</strong>
+										<small class="text-muted">Accra</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/regional_maritime_university.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/gij.jpg" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Ghana Institute of Journalism</strong>
+										<small class="text-muted">Kumasi</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/ghana_institute_of_journalism.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/christian_service_university_college.jpg" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Christian Service Uni. College</strong>
+										<small class="text-muted">Accra</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/christian_service_university_college.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/garden_city_university.jpg" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Garden City University College</strong>
+										<small class="text-muted">Kumasi</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/garden_city_university_college.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/uhas.jpg" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">Univ. of Health and Allied Sciences</strong>
+										<small class="text-muted">Kumasi</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/university_of_health_and_allied_sciences.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<a class="pull-left avatar"> 
+										<img src="school/img/nafti.png" class="img-" alt="school logo"> 
+									</a>
+									<div class="pull-left m-left-sm">
+										<strong class="font-14 block">National Film and Television Inst.</strong>
+										<small class="text-muted">Cantonments</small>
+										<div class="seperator"></div>
+										<a class="btn btn-xs btn-success" href="school/university/national_film_and_television_institute.html">Overview</a>
+										<a class="btn btn-xs btn-default">Ghana, West Africa</a>
+									</div>
+								</div>
+							</div><!-- /panel -->
+					</div>
+				</div>
+
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+			</div>
+		</div><!-- /main-container -->
+	</div><!-- /wrapper -->
+
+	<a href="#" id="scroll-to-top" class="hidden-print"><i class="octicon octicon-triangle-up"></i></a>
+	
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	
+	<!-- Jquery -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	
+	<!-- Bootstrap -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+	<!-- Modernizr -->
+	<script src='js/modernizr.min.js'></script>
+   
+    <!-- Pace -->
+	<script src='js/pace.min.js'></script>
+	
+	<!-- Popup Overlay -->
+	<script src='js/jquery.popupoverlay.min.js'></script>
+   
+    <!-- Slimscroll -->
+	<script src='js/jquery.slimscroll.min.js'></script>
+    
+	<!-- Cookie -->
+	<script src='js/jquery.cookie.min.js'></script>
+
+	<!-- Endless -->
+	<script src="js/endless/endless.js"></script>
+
+	<script>
+		$(function()	{
+			$('.animated-element').waypoint(function() {
+				
+				$(this).removeClass('no-animation');
+				
+			}, { offset: '70%' });
+			
+			$('.nav').localScroll({duration:800});
+		});
+	</script>
+	
+  </body>
+  
+</html>
