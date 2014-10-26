@@ -1462,6 +1462,7 @@ a:focus,a:hover{
 	position:relative;
 	min-height:800px;
 	background-image: url('');
+	background: none repeat scroll 0% 0% #E9EAED;
 	background-repeat:;
 	padding-top:45px;
 	margin-left:194px;
