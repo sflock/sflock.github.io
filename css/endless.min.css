@@ -1461,7 +1461,7 @@ a:focus,a:hover{
 #main-container{
 	position:relative;
 	min-height:800px;
-	background-image: url('../img/glow-big.png');
+	background-image: url('');
 	background-repeat:;
 	padding-top:45px;
 	margin-left:194px;
