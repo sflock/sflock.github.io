@@ -5513,7 +5513,7 @@ input[type=radio]:active+.custom-radio{
 
 #movieSlider .carousel-inner .item img{
 	position:absolute;
-	left:0;
+	left:15;
 	width:100%
 }
 
